@@ -1,7 +1,6 @@
 import bcrypt from "bcrypt";
 import Helper from "../Helper";
-import users from "../users.json";
-import { createDecipher } from "crypto";
+import { users } from "../users.js";
 
 class AuthController{
     constructor(){

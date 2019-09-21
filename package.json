@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel server -d dist --require dotenv/config",
     "start": "set NODE_ENV=PRODUCTION&& npm run build && node ./dist/app.js",
-    "start:dev": "set NODE_ENV=DEVELOPMENT&& nodemon app.js --exec babel-node --require dotenv/config",
+    "start:dev": "set NODE_ENV=DEVELOPMENT&& nodemon ./server/app.js --exec babel-node --require dotenv/config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
